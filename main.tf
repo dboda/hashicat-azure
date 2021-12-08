@@ -18,6 +18,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   tags = {
     environment = "Production"
     Department = "devops"
+    Billing = 'free'
   }
 }
 
@@ -202,4 +203,4 @@ resource "null_resource" "configure-cat-app" {
       host     = azurerm_public_ip.catapp-pip.fqdn
     }
   }
-}
+
