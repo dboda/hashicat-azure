@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "myresourcegroup" {
   tags = {
     environment = "Production"
     Department = "devops"
-    Billing = 'free'
+    Billing = "free"
   }
 }
 
